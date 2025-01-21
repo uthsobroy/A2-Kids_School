@@ -131,7 +131,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding-top: 50px;
 }
 
 .banner-content {
@@ -167,8 +167,211 @@ nav ul li a {
     height: auto;
 }
 
-/*  */
+/* Curriculum Section Style */
+.curriculum-container {
+    background: url(../assets/bg.png) no-repeat;
+    padding-bottom: 60px;
+    padding-top: 60px
+}
 
+.curriculum-container h1 {
+    text-align: center;
+}
+
+.curriculum-items {
+    display: flex;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.curriculum-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card-image img {
+    max-width: 100px;
+    padding-bottom: 20px;
+}
+
+.card-description {
+    padding: 25px 0;
+    line-height: 1.8rem;
+    font-size: .9rem;
+}
+
+.card-btn {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.curriculum-card:nth-of-type(1) .card-btn {
+    color: var(--acua-color);
+}
+
+.curriculum-card:nth-of-type(2) .card-btn {
+    color: var(--orange-color);
+}
+
+.curriculum-card:nth-of-type(3) .card-btn {
+    color: var(--purple-color);
+}
+
+.curriculum-card:nth-child(1) {
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    border: 0.94px solid rgb(222, 245, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+.curriculum-card:nth-child(2) {
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    border: 0.94px solid rgb(255, 244, 220);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+.curriculum-card:nth-child(3) {
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    border: 0.94px solid rgb(242, 232, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 60px;
+    font-size: 1.8rem;
+}
+
+.arrow {
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    padding: 10px;
+    color: var(--white);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.arrow:hover {
+    background-color: var(--blue-color);
+}
+
+
+/* ===========================
+   Our Story Style*/
+#our-container {
+    background: url(../assets/bg.png) no-repeat,
+        linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
+    padding-bottom: 60px;
+}
+
+
+.story-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 60px;
+}
+
+.story-card {
+    display: flex;
+    gap: 20px;
+}
+
+.left-container {
+    border-radius: 20px;
+    background-color: var(--white);
+    position: relative;
+}
+
+.left-btn {
+    position: absolute;
+    bottom: 13.5rem;
+    left: 3rem;
+    background-color: var(--acua-color);
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--white);
+    font-size: .8rem;
+    transition: .3s ease;
+}
+
+.left-btn:hover {
+    background-color: var(--blue-color);
+}
+
+.left-card {
+    padding: 20px 30px;
+}
+
+.left-card h3 {
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.left-card p {
+    font-size: .9rem;
+    padding-top: 20px;
+    line-height: 1.6rem;
+}
+
+.left-container img {
+    border-radius: 20px 20px 0 0;
+}
+
+.right-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.right-card {
+    border-radius: 20px;
+    background-color: var(--white);
+    position: relative;
+}
+
+.right-btn {
+    position: absolute;
+    bottom: 5rem;
+    left: 2rem;
+    background-color: olivedrab;
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--white);
+    font-size: .8rem;
+    transition: .3s ease;
+}
+
+.right-btn:hover {
+    background-color: var(--blue-color);
+}
+
+.card-2 {
+    padding: 30px 20px 20px 20px;
+}
+
+.right-container img {
+    border-radius: 20px 20px 0 0;
+}
+
+.our-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.story-btn{
+    background-color: var(--text-primary);
+    display: flex;
+    
+}
 
 /* = = = = = = = = = = = = =
 Small Device Media Query */
@@ -209,4 +412,34 @@ Small Device Media Query */
         font-size: 1rem;
     }
 
+    /* curriculum card */
+    .curriculum-items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    /* Our Story */
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .right-card img {
+        width: 100%;
+    }
+
+    .right-btn {
+        bottom: 6.5rem;
+        left: 1rem;
+    }
 }

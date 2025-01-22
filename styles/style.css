@@ -373,6 +373,53 @@ nav ul li a {
     
 }
 
+/* Footer */
+.footer{
+    background-color: var(--blue-color);
+}
+
+.foot-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; 
+    padding: 80px 0;
+    gap: 10rem;
+}
+
+.foot-info img {
+    max-width: 80px;
+}
+.foot-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.foot-title > h2{
+    font-size: 1.7rem;
+    color: var(--white);
+}
+.foot-description{
+    font-size: 1rem;
+    padding-top: 30px;
+    color: var(--white);
+}
+
+.foot-about{
+     line-height: 1.8;
+     color: var(--white);
+}
+.foot-about > h3 {
+    padding-bottom: 20px;
+}
+
+.foot-social h3 {
+    padding-bottom: 20px;
+    color: var(--white);
+}
+.foot-social img {
+   width: 35px;
+}
+
+
 /* = = = = = = = = = = = = =
 Small Device Media Query */
 @media (max-width: 576px) {

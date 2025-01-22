@@ -382,7 +382,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr; 
     padding: 80px 0;
-    gap: 10rem;
+    gap: 8rem;
 }
 
 .foot-info img {
@@ -488,5 +488,12 @@ Small Device Media Query */
     .right-btn {
         bottom: 8rem;
         left: 1rem;
+    }
+
+    /* Footer */
+    .foot-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
